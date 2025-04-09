@@ -69,6 +69,40 @@
         ul li:hover {
             background-color: #e7f3e7; 
         }
+        .skills-container {
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 20px; 
+        background-color: #f9f9f9; 
+        padding: 20px; 
+        border-radius: 8px; 
+    }
+
+    .skill-item {
+        background-color: #ffffff; 
+        border: 1px solid #ddd; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        padding: 15px; 
+        border-radius: 10px;
+        transition: transform 0.3s ease, background-color 0.3s ease; 
+    }
+
+    .skill-item:hover {
+        transform: scale(1.05); 
+        background-color: #e7f3e7; 
+    }
+
+    .skill-item h3 {
+        font-size: 1.2em; 
+        color: #4CAF50; 
+        margin-bottom: 5px;
+    }
+
+    .skill-item p {
+        margin: 0;
+        font-size: 1em; 
+        color: #555; 
+    }
 
 
 
@@ -96,15 +130,29 @@
  </div>
  <div class="section">
     <h2>Skills</h2>
-    <ul>
-        <li>Retail Stock Management: Inventory optimization and operational efficiency</li>
-        <li>Programming: HTML, CSS, JavaScript, Python</li>
-        <li>Web Development: Responsive design, user interfaces, and backend integration</li>
-        <li>Analytical Thinking: Problem-solving and process improvement</li>
-
-    </ul>
-</div>
- <div class="section">
+    <div class="skills-container">
+        <div class="skill-item">
+            <h3>Retail Stock Management</h3>
+            <p>Inventory optimization and operational efficiency</p>
+        </div>
+        <div class="skill-item">
+            <h3>Programming</h3>
+            <p>HTML, CSS, JavaScript, Python</p>
+        </div>
+        <div class="skill-item">
+            <h3>Web Development</h3>
+            <p>Responsive design, user interfaces, and backend integration</p>
+        </div>
+        <div class="skill-item">
+            <h3>Analytical Thinking</h3>
+            <p>Problem-solving and process improvement</p>
+        </div>
+        <div class="skill-item">
+            <h3>Self-Learning</h3>
+            <p>Continuously enhancing technical expertise and knowledge</p>
+        </div>
+    </div>
+   <div class="section">
     <h2>Experience</h2>
     <ul>
         <li><strong>Waiter, Cashier, Supervisor</strong> - [August 2022 – July 2024]
@@ -135,7 +183,7 @@
             <li>Bachelor in management information system - Leabnese University (2021-2025)</li>
         </ul>
 
-</div>
+    </div>
 
 </div>
 
